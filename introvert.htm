@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> An Introvert </title>
+		<meta charset = "UTF=8" />
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1" />
+		<link rel = "stylesheet" href= "style.css">
+	</head>
+	<body>
+		<header>
+			<a href = "#" class = "logo"> Ren </a>
+			<ul>
+				<li><a href = "#" class = "active">HOME</a></li>
+				<li><a href = "#hobby">HOBBIES</a></li>
+				<li><a href = "#">CREDITS</a></li>
+			</ul>
+		</header>
+		<section class = "images">
+			<img src = "stars.png" id = "stars">
+			<img src = "moon.png" id = "moon">
+			<img src = "mountains_behind.png" id = "mountains_behind">
+			<h2 id = "text"> An Introvert </h2>
+			<a href = "#sec" id = "btn"> More Info </a>
+			<img src = "mountains_front.png" id = "mountains_front">
+		</section>
+		<section class = "sec1">
+			<div class = "sec" id = "sec">
+				<h2> About Me </h2>
+				<a href = "https://twitter.com/riritzu/status/1578785243720749056?s=20&t=lJPLB_AOCnwUJUcX1rULPQ"><img src = "shuchonk.png" id = "shuchonk"></a>
+				<p> Hello! I am Rinoa Rochelle D Carmona. <br>
+					I am a 2nd year student at DFCAMCLP, taking my Bachelors in Information System. <br> 
+					I am 19 years old, although I do turn 20 in a few months.<br>
+					I live in Las Pinas City! Though I won't specifically say my address because its unnecessary. <br>
+					Hmm... What else do I talk about? Goals in life? Well-<br>
+					<br><br>
+					I aspired to be a writer, I love writing to the point I don't think I can call it a hobby. <br>
+					Writing is a passion I wish I could act upon, one I could prioritize, but being an IT student does have its perks. <br> 
+					Since being an IT student, if I were to study hard, then that means I'll probably find a stable and good job, <br>
+					which in turn means I'll be able to provide for my little sister so she'll be able to have a choice in what she <br>
+					wants to become! <br>
+					<br><br>
+					Oh, it seems I forgot a few details before I talked about my goals in life! Wekll then- <br>
+					I am the eldest daughter, me having a little sister. My mom and dad both work so I stay at home to take care of <br>
+					my little sister and our dog. <br> 
+					I suppose that's it, isn't it?
+					<br> <br>
+					
+			</div>
+		</section>
+		<section class = "sec2">
+			<div class = "hobby" id = "hobby">
+				<h2> Hobbies </h2>
+				<ul>
+					<li> Games </li>
+						<p class = "games"> 
+							I like to play quite a few games! Here are games I've already played and ones I'm actively playing! <br><br>
+							<u><b> Games I've played </b></u> <br>
+							Mad Father <br> Misao <br> Ib <br>
+							Legend Of Zelda:BOTW <br> Project Zomboid <br>
+							Cinderella Phenomenon <br> <br>
+							<u><b>Games I'm currently playing</b></u> <br>
+							Genshin Impact<br> Cookie Run Kingdom <br>
+							Twisted Wonderland <br> Bungou Tales <br> </p> <br> <br>
+					<li> Reading </li>
+					<p class = "books">
+						I adore reading quite a lot!! Though I've forgotten books I've physically read <br>
+						I do have the first three books of the Harry Potter series. <br>
+						I also like reading fanfiction a lot! It's what inspired me to write!</p>
+					<li> Art </li>
+					<p class = "art">
+						I sometimes like to draw! Or watch anything related to art! It's one of the few reasons <br>
+						why I want to go to the National Museum! <br> <br>
+						I think that's all for my hobbies! Thank you! </p>
+				</ul>
+			</div>
+		</section>
+		<script>
+			let stars = document.getElementById('stars');
+			let moon = document.getElementById('moon');
+			let mountains_behind = document.getElementById('mountains_behind');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+			let mountains_front = document.getElementById('mountains_front');
+			let header = document.querySelector('header');
+			
+			window.addEventListener('scroll', function(){
+				let value = window.scrollY;
+				stars.style.left = value * 0.25 + 'px';
+				moon.style.top = value * 1.05 + 'px';
+				mountains_behind.style.top = value * 0.5 + 'px';
+				mountains_front.style.top = value * 0 + 'px';
+				text.style.marginRight = value * 4 + 'px';
+				text.style.marginTop = value * 1.5 + 'px';
+				btn.style.marginTop = value * 1.5 + 'px';
+				header.style.top = value * 0.5 + 'px';
+				
+			})
+		</script>
+	</body>
+</html>
